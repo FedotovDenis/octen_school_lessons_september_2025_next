@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 export default async function PostsPage() {
@@ -10,7 +12,7 @@ export default async function PostsPage() {
             <ul>
                 {posts.map((post: { id: number; title: string }) => (
                     <li key={post.id}>
-                        <a href={`/posts/${post.id}`}>{post.title}</a>
+                        <Link href={`/posts/${post.id}`}>{post.title}</Link>
                     </li>
                 ))}
             </ul>

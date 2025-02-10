@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 export default async function CommentsPage() {
@@ -10,7 +12,7 @@ export default async function CommentsPage() {
             <ul>
                 {comments.map((comment: { id: number; name: string }) => (
                     <li key={comment.id}>
-                        <a href={`/comments/${comment.id}`}>{comment.name}</a>
+                        <Link href={`/comments/${comment.id}`}>{comment.name}</Link>
                     </li>
                 ))}
             </ul>

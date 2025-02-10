@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 export default async function UsersPage(){
@@ -10,7 +12,7 @@ export default async function UsersPage(){
             <ul>
                 {users.map((user: {id: number; name: string;}) => (
                     <li key={user.id}>
-                        <a href={`/users/${user.id}`}>{user.name}</a>
+                        <Link href={`/users/${user.id}`}>{user.name}</Link>
                     </li>
              ))}
             </ul>
