@@ -1,3 +1,15 @@
+# This is homework lecture 1 task 1.
+    Create a page structure to display users, posts, comments with jasonplaceholder.
+    /users - display a list of users with an active link
+    /posts - display a list of posts with an active link
+    /comments - display a list of comments with an active link
+    /users/id - display a specific user
+    /posts/id - display a specific post
+    /comments/id - display a specific comment
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
